@@ -7,9 +7,7 @@ import Image from "next/image";
 import Logo from "../../../public/logo-visual.svg";
 import Link from "next/link";
 import { Wifi, Camera, Bell, Activity, BarChart2, MapPin, Clock } from "lucide-react";
-import PhotoGallery from "./PhotoGallery";
-import MotionAlert from "./MotionAlert";
-import StatusPage from "./Status";
+import ImageList from "./ImageList";
 
 interface MotionEvent {
   id: string;
@@ -90,9 +88,7 @@ const Dashboard = () => {
           </div>
         </div>
       </main>
-          <MotionAlert/>
-    <PhotoGallery/>
-    <StatusPage/>
+      <ImageList/>
     </div>
   );
 };
@@ -104,7 +100,6 @@ const StatusCard = ({ icon, label, status, color }: { icon: React.ReactNode; lab
       <p className="font-semibold text-gray-800">{label}</p>
       <p className={`text-${color}-500 font-bold`}>{status}</p>
     </div>
-
   </div>
 );
 
