@@ -26,7 +26,7 @@ const ImageList: React.FC = () => {
     const fetchImages = async () => {
       try {
         const data = await getImages();
-        setImages(data);
+        setImages(data.reverse());
       } catch (err) {
         setError('Error loading images');
       }
