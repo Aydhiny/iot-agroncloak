@@ -13,7 +13,7 @@ interface Image {
 
 const ImageList: React.FC = () => {
   const [images, setImages] = useState<Image[]>([]);
-  const [error, setError] = useState<string | null>(null);
+  const [, setError] = useState<string | null>(null);
   const [model, setModel] = useState<cocoSsd.ObjectDetection | null>(null);
   const [imageDetections, setImageDetections] = useState<{ [key: number]: any[] }>({});
   const [filter, setFilter] = useState<string>('all');

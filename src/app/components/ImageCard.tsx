@@ -8,12 +8,6 @@ interface ImageCardProps {
   };
   detections: any[];
 }
-interface ImageData {
-  id: number;
-  imageData: string;
-  capturedAt: string | null;
-}
-
 
 const ImageCard: React.FC<ImageCardProps> = ({ image, detections }) => {
   return (
