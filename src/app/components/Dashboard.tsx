@@ -7,16 +7,25 @@ import ImageList from "./ImageList";
 
 const Dashboard = () => {
   return (
-    <div className="min-h-screen bg-slate-300 w-full text-gray-900 transition-colors duration-500">
+    <div className="min-h-screen bg-slate-700 w-full text-gray-900 transition-colors duration-500">
       <header className="flex justify-between items-center py-4 px-6 bg-white border-b border-gray-300">
-        <Link href="/" className="text-indigo-500 hover:text-indigo-700 font-bold">
+        <Link
+          href="/"
+          className="text-indigo-500 hover:text-indigo-700 font-bold"
+        >
           ⬅ Back to Home
         </Link>
         <h1 className="text-3xl text-slate-600">Welcome to Dashboard - user</h1>
-        <Image src={Logo} alt="Logo" width={50} height={50} className="cursor-pointer" />
+        <Image
+          src={Logo}
+          alt="Logo"
+          width={50}
+          height={50}
+          className="cursor-pointer"
+        />
       </header>
       <div className="p-8">
-      <ImageList />
+        <ImageList />
       </div>
     </div>
   );
